@@ -32,20 +32,21 @@ st.markdown(
     /* Header */
     .app-header {
         padding: 10px 0 24px 0;
-        border-bottom: 1px solid #eeeeee;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.25);
         margin-bottom: 25px;
     }
 
     .app-title {
         font-size: 32px;
         font-weight: 700;
-        color: #2f3140;
+        color: var(--text-color);
         margin: 0;
     }
 
     .app-subtitle {
         font-size: 16px;
-        color: #6b7280;
+        color: var(--text-color);
+        opacity: 0.65;
         margin-top: 6px;
     }
 
@@ -60,7 +61,7 @@ st.markdown(
     [data-testid="stChatMessage"]:has(
         [data-testid="stChatMessageAvatarUser"]
     ) {
-        background: #f1f5f9;
+        background: var(--secondary-background-color);
     }
 
     /* Chat input container */
@@ -70,9 +71,9 @@ st.markdown(
 
     [data-testid="stChatInput"] > div {
         border-radius: 24px !important;
-        border: 1px solid #d9d9d9 !important;
-        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08) !important;
-        background: white !important;
+        border: 1px solid rgba(128, 128, 128, 0.3) !important;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15) !important;
+        background: var(--secondary-background-color) !important;
     }
 
     [data-testid="stChatInput"] textarea {
